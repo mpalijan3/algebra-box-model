@@ -3,26 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to use CSS Box model</title>
+    <title>Algebra Box Model</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>How to Use CSS Box Model Effectively</h1>
-        <p>When designing web layouts, understanding the relationship between  typography and the box model is crucial. Each text element occupies  space that can be controlled through padding, margin, and border  properties.</p>
-        <div class="list">
-            <h2>Key concepts</h2>
-            <ul>
-                <li>Content - The actual text or content inside the element</li>
-                <li>Padding - Space between content and border</li>
-                <li>Border - The line around the padding and content</li>
-                <li>Margin - Space outside the border, between elements</li>
-            </ul>
+    <div class="panel panel--parent">
+        <div class="panel__title">How to Use CSS Box Model Effectively</div>
+        <div class="panel__text">When designing web layouts, understanding the relationship between  typography and the box model is crucial. Each text element occupies  space that can be controlled through padding, margin, and border  properties.</div>
+    <div class="panel panel--child">
+        <div class="panel__subtitle">Key concepts</div>
+        <div class="panel__text">
+        <ul>
+            <li>Content - The actual text or content inside the element</li>
+            <li>Padding - Space between content and border</li>
+            <li>Border - The line around the padding and content</li>
+            <li>Margin - Space outside the border, between elements</li>
+        </ul>
         </div>
-        <div class="tip">
-            <h2>Pro Tip</h2>
-            <p>Use consistent spacing values to create visual hierarchy and improve  readability. Notice how this callout uses padding and a left border for  emphasis.</p>
-        </div>
+    </div>
+    <div class="panel panel--child panel--tip">
+        <div class="panel__subtitle">Pro Tip</div>
+        <div class="panel__text">Use consistent spacing values to create visual hierarchy and improve  readability. Notice how this callout uses padding and a left border for  emphasis.</div>
+    </div>
     </div>
 </body>
 </html>
